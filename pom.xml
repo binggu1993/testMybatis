@@ -1,0 +1,355 @@
+<project xmlns="http://maven.apache.org/POM/3.3.9" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://maven.apache.org/POM/2.3.2	 http://maven.apache.org/xsd/maven-2.3.2.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.test</groupId>
+  <artifactId>helloMaven</artifactId>
+  <version>0.0.3-SNAPSHOT</version>
+  <packaging>war</packaging>
+   <!--   添加私有仓库地址 -->
+      <repositories>
+          <repository>
+              <id>nexus</id>
+              <name>Team Nexus Repository</name>
+              <url>http://192.168.5.46:8081/nexus/content/groups/public/</url>
+          </repository>
+      </repositories>  
+      <!--   添加插件地址 -->
+        <pluginRepositories>
+          <pluginRepository>
+             <id>nexus</id>
+             <name>Team Nexus Repository</name>
+             <url>http://192.168.5.46:8081/nexus/content/groups/public/</url>
+         </pluginRepository>
+     </pluginRepositories> 
+     <!--   添加oracle驱动构件 -->
+      <dependencies>
+     
+      <dependency>
+  <groupId>org.apache.ant</groupId>
+  <artifactId>ant</artifactId>
+  <version>1.10.1</version>
+  </dependency>
+  
+   <dependency>
+  <groupId>antlr</groupId>
+  <artifactId>antlr</artifactId>
+  <version>2.7.6</version>
+  </dependency>
+  
+  <dependency>
+  <groupId>aopalliance</groupId>
+  <artifactId>aopalliance</artifactId>
+  <version>1.0</version>
+  </dependency>
+  
+  <dependency>
+  <groupId>org.springframework.data</groupId>
+  <artifactId>spring-data-elasticsearch</artifactId>
+  <version>3.0.0.M4</version>
+</dependency>
+
+
+<dependency>
+  <groupId>mysql</groupId>
+  <artifactId>mysql-connector-java</artifactId>
+  <version>5.1.42</version>
+</dependency>
+
+<dependency>
+  <groupId>org.mybatis</groupId>
+  <artifactId>mybatis</artifactId>
+  <version>3.4.2</version>
+</dependency>
+
+<dependency>
+  <groupId>junit</groupId>
+  <artifactId>junit</artifactId>
+  <version>4.12</version>
+</dependency>
+  <!--
+  <dependency>
+  <groupId>asm</groupId>
+  <artifactId>asm</artifactId>
+  <version>3.3</version>
+  </dependency>
+  
+  <dependency>
+  <groupId>asm</groupId>
+  <artifactId>asm-commons</artifactId>
+  <version>3.3</version>
+</dependency>
+
+<dependency>
+  <groupId>asm</groupId>
+  <artifactId>asm-tree</artifactId>
+  <version>3.3</version>
+</dependency>
+
+<dependency>
+  <groupId>asm</groupId>
+  <artifactId>asm-util</artifactId>
+  <version>2.2.3</version>
+</dependency>
+  
+  <dependency>
+  <groupId>aspectj</groupId>
+  <artifactId>aspectjrt</artifactId>
+  <version>1.5.3</version>
+</dependency>
+
+<dependency>
+  <groupId>aspectj</groupId>
+  <artifactId>aspectjweaver</artifactId> 
+  <version>1.5.3</version>
+</dependency>
+
+<dependency>
+  <groupId>c3p0</groupId>
+  <artifactId>c3p0</artifactId>
+  <version>0.9.1.2</version>
+</dependency>
+
+<dependency>
+  <groupId>cglib</groupId>
+  <artifactId>cglib-nodep</artifactId>
+  <version>2.1_3</version>
+</dependency>
+
+https://mvnrepository.com/artifact/commons-httpclient/commons-httpclient
+<dependency>
+    <groupId>commons-httpclient</groupId>
+    <artifactId>commons-httpclient</artifactId>
+    <version>3.0.1</version>
+</dependency>
+
+
+
+<dependency>
+  <groupId>commons-beanutils</groupId>
+  <artifactId>commons-beanutils</artifactId>
+  <version>1.7.0</version>
+</dependency>
+
+<dependency>
+  <groupId>commons-codec</groupId>
+  <artifactId>commons-codec</artifactId>
+  <version>1.4</version>
+</dependency>
+
+<dependency>
+  <groupId>commons-collections</groupId>
+  <artifactId>commons-collections</artifactId>
+  <version>3.2</version>
+</dependency>
+
+<dependency>
+  <groupId>commons-configuration</groupId>
+  <artifactId>commons-configuration</artifactId>
+  <version>1.9</version>
+</dependency>
+
+<dependency>
+  <groupId>commons-dbcp</groupId>
+  <artifactId>commons-dbcp</artifactId>
+  <version>1.2.2</version>
+</dependency>
+
+<dependency>
+  <groupId>commons-digester</groupId>
+  <artifactId>commons-digester</artifactId>
+  <version>1.8</version>
+</dependency>
+
+<dependency>
+  <groupId>commons-fileupload</groupId>
+  <artifactId>commons-fileupload</artifactId>
+  <version>1.2.2</version>
+</dependency>
+
+<dependency>
+  <groupId>commons-io</groupId>
+  <artifactId>commons-io</artifactId>
+  <version>2.0.1</version>
+</dependency>
+
+
+<dependency>
+  <groupId>commons-lang</groupId>
+  <artifactId>commons-lang</artifactId>
+  <version>2.5</version>
+</dependency>
+
+<dependency>
+  <groupId>commons-logging</groupId>
+  <artifactId>commons-logging</artifactId>
+  <version>1.1.1</version>
+</dependency>
+
+<dependency>
+  <groupId>commons-net</groupId>
+  <artifactId>commons-net</artifactId>
+  <version>3.0.1</version>
+</dependency>
+
+<dependency>
+  <groupId>commons-pool</groupId>
+  <artifactId>commons-pool</artifactId>
+  <version>1.5.6</version>
+</dependency>
+
+<dependency>
+  <groupId>dom4j</groupId>
+  <artifactId>dom4j</artifactId>
+  <version>1.6.1</version>
+</dependency>
+
+https://mvnrepository.com/artifact/org.directwebremoting/dwr
+<dependency>
+    <groupId>org.directwebremoting</groupId>
+    <artifactId>dwr</artifactId>
+    <version>2.0.1</version>
+</dependency>
+
+
+https://mvnrepository.com/artifact/net.sf.ehcache/ehcache-core
+<dependency>
+    <groupId>net.sf.ehcache</groupId>
+    <artifactId>ehcache-core</artifactId>
+    <version>2.6.2</version>
+</dependency>
+
+https://mvnrepository.com/artifact/net.sf.ezmorph/ezmorph
+<dependency>
+    <groupId>net.sf.ezmorph</groupId>
+    <artifactId>ezmorph</artifactId>
+    <version>1.0.3</version>
+</dependency>
+
+<dependency>
+  <groupId>org.apache.httpcomponents</groupId>
+  <artifactId>fluent-hc</artifactId>
+  <version>4.5.2</version>
+</dependency>
+
+<dependency>
+  <groupId>fop</groupId>
+  <artifactId>fop</artifactId>
+  <version>0.20.5</version>
+</dependency>
+
+<dependency>
+  <groupId>org.freemarker</groupId>
+  <artifactId>freemarker</artifactId>
+  <version>2.3.18</version>
+</dependency>
+
+
+https://mvnrepository.com/artifact/org.hibernate/hibernate-core
+<dependency>
+    <groupId>org.hibernate</groupId>
+    <artifactId>hibernate-core</artifactId>
+    <version>3.6.10.Final</version>
+</dependency>
+
+<dependency>
+  <groupId>org.hibernate</groupId>
+  <artifactId>hibernate-c3p0</artifactId>
+  <version>3.6.10.Final</version>
+</dependency>
+
+<dependency>
+  <groupId>org.hibernate</groupId>
+  <artifactId>hibernate-commons-annotations</artifactId>
+  <version>3.2.0.Final</version>
+</dependency>
+
+<dependency>
+  <groupId>org.hibernate</groupId>
+  <artifactId>hibernate-ehcache</artifactId>
+  <version>3.6.10.Final</version>
+</dependency>
+
+<dependency>
+  <groupId>org.hibernate</groupId>
+  <artifactId>hibernate-entitymanager</artifactId>
+  <version>3.6.10.Final</version>
+</dependency>
+
+<dependency>
+  <groupId>org.hibernate</groupId>
+  <artifactId>hibernate-envers</artifactId>
+  <version>3.6.10.Final</version>
+</dependency>
+
+<dependency>
+  <groupId>org.hibernate</groupId>
+  <artifactId>hibernate-infinispan</artifactId>
+  <version>3.6.10.Final</version>
+</dependency>
+
+<dependency>
+  <groupId>org.hibernate</groupId>
+  <artifactId>hibernate-jbosscache</artifactId>
+  <version>3.6.10.Final</version>
+</dependency>
+
+<dependency>
+  <groupId>org.hibernate</groupId>
+  <artifactId>hibernate-oscache</artifactId>
+  <version>3.6.10.Final</version>
+</dependency>
+
+<dependency>
+  <groupId>org.hibernate</groupId>
+  <artifactId>hibernate-proxool</artifactId>
+  <version>3.6.10.Final</version>hibernate-swarmcache
+</dependency>
+
+<dependency>
+  <groupId>org.hibernate</groupId>
+  <artifactId>hibernate-swarmcache</artifactId>
+  <version>3.6.10.Final</version>
+</dependency>
+
+<dependency>
+  <groupId>org.hibernate</groupId>
+  <artifactId>hibernate-testing</artifactId>
+  <version>3.6.10.Final</version>
+</dependency>
+
+<dependency>
+  <groupId>org.hibernate.javax.persistence</groupId>
+  <artifactId>hibernate-jpa-2.0-api</artifactId>
+  <version>1.0.1.Final</version>
+</dependency> -->
+
+       
+    </dependencies>
+    <!-- 
+     <distributionManagement>
+          <repository>
+             <id>releases</id>
+             <name>nexus Releases repository</name>
+             <url>http://192.168.5.46:8081/nexus/content/repositories/releases/</url>
+          </repository>
+          <snapshotRepository>
+              <id>nexus-snapshots</id>
+              <name>nexus Snapshots repository</name>
+             <url>http://192.168.2.182:8081/nexus/content/repositories/snapshots/</url>
+         </snapshotRepository>
+ </distributionManagement>  -->
+  <build>
+  <plugins>  
+    <plugin>  
+        <groupId>org.apache.maven.plugins</groupId>  
+        <artifactId>maven-war-plugin</artifactId>  
+        <version>3.0.0</version>  
+        <configuration>  
+            <failOnMissingWebXml>false</failOnMissingWebXml>  
+        </configuration>  
+    </plugin>  
+</plugins> 
+  <finalName>helloMaven</finalName>
+  </build>
+</project>
