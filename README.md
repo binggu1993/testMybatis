@@ -1,2 +1,3 @@
 # testMybatis
-a simple mybatis demo project
+a simple mybatis demo project with crud
+
