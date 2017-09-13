@@ -30,7 +30,7 @@ public class mybatisTest {
 	{
 
        
-       
+      
         //使用MyBatis提供的Resources类加载mybatis的配置文件（它也加载关联的映射文件）
         //Reader reader = Resources.getResourceAsReader(resource); 
         //构建sqlSession的工厂
